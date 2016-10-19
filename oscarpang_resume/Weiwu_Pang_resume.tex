@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Weiwu}{Pang}{ 
+\href{mailto:weiwupan@usc.edu}{weiwupan@usc.edu} | 323.791.1024
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.30\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Southern California}
+
+\descript{BS in Computer Science and Electrical Engineering}
+\location{Expected May 2018 | Los Angeles, CA}
+Viterbi School of Engineering \\
+Dean's List (All Semesters) \\
+\location{ Cum. GPA: 3.81 / 4.0 \\
+Major GPA: 3.91 / 4.0}
+\sectionsep
+
+\subsection{Shenzhen Middle School}
+\location{Grad. May 2014|  Shenzhen, China}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Links} 
+%Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\custombold{debarghyadas}}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+%\subsection{Undergraduate}
+Software Development \\
+Software Engineering \\
+Computer Network \\
+Computer and Network Security \\
+Computer Systems Organization \\
+Undergrad Thesis {\footnotesize \textit{\textbf{(Power Management System on GPUs)}}} \\
+Data Structure and Algorithm 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+%\subsection{Programming}
+\location{Over 10000 lines:}
+Java \textbullet{}  C++ \textbullet{} Matlab \\
+\location{Over 5000 lines:}
+C \textbullet{}  Assembly \textbullet{} \LaTeX\ \\ 
+\location{Familiar:}
+CUDA \textbullet{} Verilog \textbullet{} iOS \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Work Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Work Experience} 
+\subsection{Course Producer}
+\descript{Undergraduate Teach Assist. for C++ Data Structure and Algorithm Course} 
+
+\subsection{Math Tutor for Calculus}
+\descript{Hold tutor sessions for students who need helps in Calculus I, II and III}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{EndLessBattle}
+\descript{| An online text-based RPG Game inspired by "A Dark Room"}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Designed the client-server architecture.
+	\item Built the server with JAVA and maintained it on AWS and Digital Ocean server.
+	\item Implemented MySQL database and authentication functionality.
+	\item Implemented communication between server and game clients with RPC-based protocals.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{2048 Game}
+\descript{| A 2048 game implemented with digital circuit on Nexys 3 board}
+\begin{tightemize}
+	\item Designed the board module with RTL Verilog to implement actions in 2048 game.
+	\item Built and integrated pseudo-random number generator module on Nexys 3 board.
+	\item Designed unit tests for the board module.
+	\item Integrate the board module to interface VGA port.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Open Acceleration Systems (OASYS) Research Lab}
+\descript{| Undergraduate Researcher}
+\location{May 2016 – Present | Los Angeles, CA}
+Worked with Professor \textbf{\href{http://oasys.isi.edu/profile.php?id=1}{Young H. Cho}} to create a power management software package that is able to improve power efficiency and manufacture yield rate for modern CPUs and GPUs.
+\begin{tightemize}
+	\item Designed an algorithm that utilizes Longest-Common-Ancestor(LCA) to generate graphs of possible runtime execution trace of any C/C++ program.
+	\item Built the software prototype using multi-threading and shared memory to actively collecting runtime information and power information.
+	\item Implemented MATLAB program to extracted CPU's subcomponents' power weight.
+	\item Wrote test benches to research on NVIDIA's GPU runtime scheduling detail on CUDA parallel computing platform.
+	\item Utilized Mccdaq datalogger and Universal Library(UL) to developed a GPU power monitor program.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Vilesov Research Group}
+\descript{| Undergraduate Researcher}
+\location{Feb 2016 – Present | Los Angeles, CA}
+Implemented an algorithm in MATLAB to process single-shot femtosecond X-ray coherent diffractive images. Received scholarship from USC Undergraduate Research Associates Program.
+\begin{tightemize}
+	\item Reconstructed and optimized old algorithm in MATLAB. The performance get 80\% better.
+	\item Utilized auto-correlation technique to calculate droplet radius at different angles.
+	\item Utilized lsqcurvefit and simulated annealing to process the diffraction pattern and fit the droplet model.
+\end{tightemize}
+\sectionsep
+
+
+
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
