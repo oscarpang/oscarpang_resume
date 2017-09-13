@@ -73,7 +73,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.32\textwidth} 
+\begin{minipage}[t]{0.30\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -82,19 +82,20 @@
 \section{Education} 
 
 \subsection{University of Southern California}
-\location{Expected May 2018 | Los Angeles, CA}
-\location{Cum. GPA: 3.78 / 4.0 \\
+\location{Los Angeles, CA}
+\location{Expected May 2018}
+\location{Cum. GPA: 3.81 / 4.0 \\
 Viterbi School of Engineering \\
 Dean's List (All Semesters) }
 \sectionsep
 
-\descript{B.S. Computer Science Major}
-\location{Major GPA: 3.73 / 4.0}
+\descript{B.S. Computer Science}
+\location{Major GPA: 3.78 / 4.0}
 \sectionsep
 
-\descript{B.S. Electrical Engineering Major}
+\descript{B.S. Electrical Engineering}
 \location{Emphasis in Computer Engineering}
-\location{Major GPA: 3.83 / 4.0}
+\location{Major GPA: 3.81 / 4.0}
 
 \sectionsep
 
@@ -110,6 +111,21 @@ Dean's List (All Semesters) }
 %Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
 %LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\custombold{debarghyadas}}
 %\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Technical SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\descript{Programming Languages:}
+\location{Over 10000 lines:}
+C++ \textbullet{} Java \textbullet{}  Matlab \\
+\location{Over 5000 lines:}
+C \textbullet{}  Assembly \textbullet{} \LaTeX\ \\ 
+\descript{Technologies/Environment:}
+CUDA \textbullet{} Android \textbullet{} iOS \textbullet{} \\
+Windows \textbullet{} Linux
+\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
@@ -129,24 +145,10 @@ Undergrad Thesis {\footnotesize \textit{\textbf{(Power Management System on GPUs
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\descript{Programming:}
-\location{Over 10000 lines:}
-Java \textbullet{}  C++ \textbullet{} Matlab \\
-\location{Over 5000 lines:}
-C \textbullet{}  Assembly \textbullet{} \LaTeX\ \\ 
-\location{Familiar:}
-CUDA \textbullet{} Verilog \textbullet{} iOS \textbullet{} MySQL
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Work Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Work Experience} 
+\section{On-campus Work} 
 \descript{Course Producer}
 \location{Jan 2016 - Present}
 Undergraduate Teach Assist. for C++ Data Structure and Algorithm Course
@@ -164,35 +166,39 @@ Hold tutor sessions for students who need helps in Calculus I, II and III
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.64\textwidth} 
+\begin{minipage}[t]{0.68\textwidth} 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Projects}
-
-\runsubsection{EndLessBattle}
-\descript{| An online text-based RPG Game inspired by "A Dark Room"}
+\section{Internship}
+\runsubsection{GOOGLE INC.}
+\descript{| Software Engineering Intern}
+\location{May 2017 – August 2017 | Sunnyvale, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-	\item Designed the client-server architecture.
-	\item Built the server with JAVA and maintained it on AWS and Digital Ocean server.
-	\item Implemented MySQL database and authentication functionality.
-	\item Implemented communication between server and game clients with RPC-based protocals.
+	\item Interned in Global Software Load Balancer Team and worked on GSLB Reliability(GSLB 345) project.
+	\item Hardened the coverage of the existing GSLB Fuzz Test framework from less than 10\% to 50\%.
+	\item Designed and implemented a LogCollector Server that retrieve RPC logs from GSLB servers.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{2048 Game}
-\descript{| A 2048 game implemented with digital circuit on Nexys 3 board}
+\section{Projects}
+
+\runsubsection{ParkHere}
+\descript{| Course Project: A P2P Resource Sharing Platform for Parking Space"}
+\location{Sept 2016 – Dec 2016 | Los Angeles, CA}
 \begin{tightemize}
-	\item Designed the board module with RTL Verilog to implement actions in 2048 game.
-	\item Built and integrated pseudo-random number generator module on Nexys 3 board.
-	\item Designed unit tests for the board module.
-	\item Integrate the board module to interface VGA port.
+	\item Designed the client-server architecture.
+	\item Built the server in Java and maintained it on AWS and Digital Ocean server.
+	\item Designed and implemented the backend of the Android client.
+	\item Tested client side functionality using JUnit library.
+	\item Implemented communication between server and clients with RPC protocals.
+	\item Built MySQL database and authentication functionality.
 \end{tightemize}
 \sectionsep
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     RESEARCH
@@ -205,7 +211,7 @@ Hold tutor sessions for students who need helps in Calculus I, II and III
 Worked with Professor \textbf{\href{http://oasys.isi.edu/profile.php?id=1}{Young H. Cho}} to create a power management software package that is able to improve power efficiency and manufacture yield rate for modern CPUs and GPUs.
 \begin{tightemize}
 	\item Designed an algorithm that utilizes Longest-Common-Ancestor(LCA) to generate graphs of possible runtime execution trace of any C/C++ program.
-	\item Built the software prototype using multi-threading and shared memory to actively collecting runtime information and power information.
+	\item Built the software prototype using multi-threading and shared memory to actively collect time-stamp and power information.
 	\item Implemented MATLAB program to extracted CPU's subcomponents' power weight.
 	\item Wrote test benches to research on NVIDIA's GPU runtime scheduling detail on CUDA parallel computing platform.
 	\item Utilized Mccdaq datalogger and Universal Library(UL) to developed a GPU power monitor program.
@@ -217,6 +223,7 @@ Worked with Professor \textbf{\href{http://oasys.isi.edu/profile.php?id=1}{Young
 \location{Feb 2016 – Present | Los Angeles, CA}
 Implemented an algorithm in MATLAB to process single-shot femtosecond X-ray coherent diffractive images. Received scholarship from USC Undergraduate Research Associates Program.
 \begin{tightemize}
+	\item Collaborated in an experiment hosted in SLAC National Accelerator Laboratory and utilized psana framework to analyze data in real time.
 	\item Reconstructed and optimized old algorithm in MATLAB. The performance get 80\% better.
 	\item Utilized auto-correlation technique to calculate droplet radius at different angles.
 	\item Utilized lsqcurvefit and simulated annealing to process the diffraction pattern and fit the droplet model.
